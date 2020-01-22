@@ -12,5 +12,5 @@
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");
-    return e_puck_avoid_obstacles_main(argv, argv);
+    return e_puck_avoid_obstacles_main(argc, argv);
 }

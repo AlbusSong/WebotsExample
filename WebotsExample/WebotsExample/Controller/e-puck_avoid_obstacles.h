@@ -11,6 +11,6 @@
 
 #include <stdio.h>
 
-e_puck_avoid_obstacles_main(int argc, char **argv);
+int e_puck_avoid_obstacles_main(int argc, const char **argv);
 
 #endif /* e_puck_avoid_obstacles_h */

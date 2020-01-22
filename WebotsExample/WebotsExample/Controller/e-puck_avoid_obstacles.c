@@ -206,7 +206,7 @@ static void turn_left() {
   passive_wait(0.2);
 }
 
-int e_puck_avoid_obstacles_main(int argc, char **argv) {
+int e_puck_avoid_obstacles_main(int argc, const char **argv) {
   wb_robot_init();
 
   printf("Default controller of the e-puck robot started...\n");
