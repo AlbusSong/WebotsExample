@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E2E005B23D8D391001227B0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E2E005A23D8D391001227B0 /* main.c */; };
+		4E2E006923D8D4E3001227B0 /* e-puck_avoid_obstacles.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E2E006823D8D4E3001227B0 /* e-puck_avoid_obstacles.c */; };
+		4E2E006C23D8D571001227B0 /* libController.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2E006B23D8D571001227B0 /* libController.dylib */; };
+		4E2E006D23D8D571001227B0 /* libController.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 4E2E006B23D8D571001227B0 /* libController.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4E2E005523D8D391001227B0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		4E2E006E23D8D571001227B0 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4E2E006D23D8D571001227B0 /* libController.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4E2E005723D8D391001227B0 /* WebotsExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WebotsExample; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E2E005A23D8D391001227B0 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4E2E006723D8D4E3001227B0 /* e-puck_avoid_obstacles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "e-puck_avoid_obstacles.h"; sourceTree = "<group>"; };
+		4E2E006823D8D4E3001227B0 /* e-puck_avoid_obstacles.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "e-puck_avoid_obstacles.c"; sourceTree = "<group>"; };
+		4E2E006B23D8D571001227B0 /* libController.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libController.dylib; path = ../../../../../Develop/Webots/webots/lib/controller/libController.dylib; sourceTree = "<group>"; };
+		4E2E006F23D8D6AD001227B0 /* WebotsExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebotsExample.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E2E005423D8D391001227B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E2E006C23D8D571001227B0 /* libController.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E2E004E23D8D391001227B0 = {
+			isa = PBXGroup;
+			children = (
+				4E2E005923D8D391001227B0 /* WebotsExample */,
+				4E2E005823D8D391001227B0 /* Products */,
+				4E2E006A23D8D571001227B0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4E2E005823D8D391001227B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E2E005723D8D391001227B0 /* WebotsExample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E2E005923D8D391001227B0 /* WebotsExample */ = {
+			isa = PBXGroup;
+			children = (
+				4E2E006F23D8D6AD001227B0 /* WebotsExample.entitlements */,
+				4E2E006123D8D3B4001227B0 /* Controller */,
+				4E2E005A23D8D391001227B0 /* main.c */,
+			);
+			path = WebotsExample;
+			sourceTree = "<group>";
+		};
+		4E2E006123D8D3B4001227B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4E2E006723D8D4E3001227B0 /* e-puck_avoid_obstacles.h */,
+				4E2E006823D8D4E3001227B0 /* e-puck_avoid_obstacles.c */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4E2E006A23D8D571001227B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E2E006B23D8D571001227B0 /* libController.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E2E005623D8D391001227B0 /* WebotsExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E2E005E23D8D391001227B0 /* Build configuration list for PBXNativeTarget "WebotsExample" */;
+			buildPhases = (
+				4E2E005323D8D391001227B0 /* Sources */,
+				4E2E005423D8D391001227B0 /* Frameworks */,
+				4E2E005523D8D391001227B0 /* CopyFiles */,
+				4E2E006E23D8D571001227B0 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebotsExample;
+			productName = WebotsExample;
+			productReference = 4E2E005723D8D391001227B0 /* WebotsExample */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E2E004F23D8D391001227B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Albus;
+				TargetAttributes = {
+					4E2E005623D8D391001227B0 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4E2E005223D8D391001227B0 /* Build configuration list for PBXProject "WebotsExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E2E004E23D8D391001227B0;
+			productRefGroup = 4E2E005823D8D391001227B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E2E005623D8D391001227B0 /* WebotsExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E2E005323D8D391001227B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E2E005B23D8D391001227B0 /* main.c in Sources */,
+				4E2E006923D8D4E3001227B0 /* e-puck_avoid_obstacles.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4E2E005C23D8D391001227B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4E2E005D23D8D391001227B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4E2E005F23D8D391001227B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WebotsExample/WebotsExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Y3HHHZ63R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /Users/albus/Develop/Webots/Webots.app/include/controller/c;
+				LIBRARY_SEARCH_PATHS = "/Users/albus/Develop/Webots/Webots.app//lib/controller";
+				OTHER_LDFLAGS = "-I\"/Users/albus/Develop/Webots/Webots.app/\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4E2E006023D8D391001227B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WebotsExample/WebotsExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Y3HHHZ63R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /Users/albus/Develop/Webots/Webots.app/include/controller/c;
+				LIBRARY_SEARCH_PATHS = "/Users/albus/Develop/Webots/Webots.app//lib/controller";
+				OTHER_LDFLAGS = "-I\"/Users/albus/Develop/Webots/Webots.app/\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E2E005223D8D391001227B0 /* Build configuration list for PBXProject "WebotsExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E2E005C23D8D391001227B0 /* Debug */,
+				4E2E005D23D8D391001227B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E2E005E23D8D391001227B0 /* Build configuration list for PBXNativeTarget "WebotsExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E2E005F23D8D391001227B0 /* Debug */,
+				4E2E006023D8D391001227B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E2E004F23D8D391001227B0 /* Project object */;
+}
